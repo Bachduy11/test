@@ -1,0 +1,117 @@
+.invoice-container {
+  width: 1200px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.invoice-container-item {
+  padding: 20px;
+}
+
+.header_bill {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket-code {
+  font-weight: bold;
+}
+
+.section-divider {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.left-section-bill,
+.right-section-bill {
+  width: 50%;
+  vertical-align: top;
+  padding: 10px;
+}
+
+td {
+  padding: 5px;
+}
+
+.vehicle-info-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.driver-image img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.pricing-left {
+  width: 50%;
+  vertical-align: top;
+  padding: 10px;
+}
+
+.pricing-right {
+  text-align: right;
+  padding: 10px;
+}
+
+.pricing-right p {
+  margin: 5px 0;
+}
+
+.status-pay {
+  color: blue;
+  font-weight: bold;
+}
+
+/* Responsive for mobile */
+@media only screen and (max-width: 46.1875em) {
+  .invoice-container {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .header_bill {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-section-bill,
+  .right-section-bill {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .vehicle-info-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .driver-image img {
+    width: 80px;
+  }
+
+  .pricing-left, .pricing-right {
+    width: 100%;
+    text-align: left;
+  }
+  .status-pay {
+    font-size: 14px;
+  }
+}
+
+/* Tablet view */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  .invoice-container {
+    width: 824px;
+  }
+}
